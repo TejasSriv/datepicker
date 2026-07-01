@@ -1,7 +1,15 @@
 (function () {
     let version = "2.5.2";
     let tmpl = document.createElement('template');
-    tmpl.innerHTML = `<link rel="stylesheet" type="text/css" href="light.css"/>`;
+    tmpl.innerHTML = `
+        <style>
+        .datePicker {
+            box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3); !important;
+            border-radius: 4px;
+        }
+        </style>
+        <link rel="stylesheet" type="text/css" href="light.css"/>
+    `;
 
     class DatePicker extends HTMLElement {
         constructor() {
