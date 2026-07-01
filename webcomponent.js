@@ -3,9 +3,15 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
         <style>
+        nkappler-date-picker {
+            display: block;
+            padding: 8px !important; 
+            box-sizing: border-box;
+        }
         .datePicker {
             box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3); !important;
-            border-radius: 4px;
+            border-radius: 8px;
+            width: 100% !important;
         }
         </style>
         <link rel="stylesheet" type="text/css" href="light.css"/>
